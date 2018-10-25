@@ -1,0 +1,28 @@
+#include<iostream>	
+#include<math.h>
+using namespace std;
+int main()
+{
+  float m;
+  float r;
+  int n;
+  float sotien;
+
+  cout<<"\nEnter initial amount:";
+  cin>>m;
+   cout<<"\nEnter number of years:";
+  cin>>n;
+  cout<<"\nEnter interest rate (percent per year):";
+  cin>>r;
+ 
+  sotien=m*pow((1+(r/100)),n);
+  if(m>0 && r>0 && n>0)
+	{
+						cout<<"\nAt the end of 10 years, you will have:"<<sotien<<"dollars";
+  }
+  else
+	  cout<<"moi nhap lai gia tri: ";
+
+
+  return(0);
+}
